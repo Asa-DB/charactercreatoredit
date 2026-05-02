@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Characters</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <div class="top-links">
+        <a class="box top-link" href="/">Home</a>
+        <a class="box top-link" href="/creator">Creator</a>
+      </div>
+
+      <section class="box">
+        <h1 class="section-title">Characters</h1>
+        <p class="section-copy">Upload the exported `.txt` file from the character creator. Files are saved on the server and listed below.</p>
+      </section>
+    </header>
+
+    <section class="box">
+      <form class="upload-form" id="upload-form">
+        <input class="file-input" id="character-file" type="file" accept=".txt" required>
+        <div class="button-row">
+          <button class="button" id="upload-button" type="submit">Upload Character</button>
+          <button class="button" id="refresh-button" type="button">Refresh List</button>
+        </div>
+        <p class="save-status" id="save-status"></p>
+      </form>
+    </section>
+
+    <section class="character-grid" id="character-list"></section>
+  </main>
+
+  <script src="/characters.js"></script>
+</body>
+</html>
